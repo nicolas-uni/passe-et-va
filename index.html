@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passe &amp; Va — Agence de communication · Alsace</title>
+<meta name="description" content="Passe & Va, agence de communication en Alsace. Photo, vidéo, réseaux sociaux. On valorise votre image et votre visibilité.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__logo" aria-label="Passe et Va — accueil">
+    <img class="logo-dark" src="assets/logo-dark.png" alt="Passe & Va">
+    <img class="logo-white" src="assets/logo-white.png" alt="">
+  </a>
+  <div class="nav__links">
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#clients">Clients</a>
+    <a href="#agence">Agence</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav__right">
+    <a href="#portfolio" class="btn btn--red">Voir le portfolio <span class="arrow">↗</span></a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+
+<span id="top"></span>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="hero">
+
+  <!-- ---- V1 : TYPO CINÉTIQUE ---- -->
+  <section class="hero-variant hv1 active" data-screen-label="Hero 01" data-theme="cream">
+    <div class="hv1__grain"></div>
+    <div class="container">
+      <div class="eyebrow hv1__eyebrow">Agence de communication · Alsace</div>
+      <h1>
+        <span class="line"><span>On valorise</span></span>
+        <span class="line"><span>votre <span class="rot" id="rot1">image</span></span></span>
+        <span class="line"><span>&amp; votre visibilité<span class="dot">.</span></span></span>
+      </h1>
+      <div class="hv1__sub">
+        <p>Photo, vidéo, réseaux sociaux. On capte ce qui vous rend unique et on le fait passer — fort.</p>
+        <a href="#portfolio" class="btn">Voir le portfolio <span class="arrow">↗</span></a>
+      </div>
+    </div>
+    <div class="hero-tag" style="top:24%;right:9%">📸 Photo</div>
+    <div class="hero-tag" style="top:62%;right:16%"><span class="d"></span> Vidéo</div>
+    <div class="hero-tag" style="top:44%;right:5%">Réseaux sociaux</div>
+    <div class="float-dot" id="fdot" style="width:120px;height:120px;top:18%;right:24%;opacity:.9"></div>
+    <div class="scroll-cue"><span>Scroll</span><span class="bar"></span></div>
+  </section>
+
+  <!-- ---- V2 : SHOWREEL ---- -->
+  <section class="hero-variant hv2" data-screen-label="Hero 02" data-theme="dark">
+    <div class="hv2__media">
+      <div class="tile" style="background-image:url('https://picsum.photos/seed/reel-a/1600/1000')"></div>
+      <div class="tile" style="background-image:url('https://picsum.photos/seed/reel-b/1600/1000')"></div>
+      <div class="tile" style="background-image:url('https://picsum.photos/seed/reel-c/1600/1000')"></div>
+    </div>
+    <div class="hv2__scrim"></div>
+    <div class="hv2__top">
+      <div class="hv2__rec"><span class="blink"></span> Showreel · 2025</div>
+      <div class="hv2__rec muted">Sélestat — Alsace</div>
+    </div>
+    <div class="container">
+      <h1>
+        <span class="ln"><span>On raconte</span></span>
+        <span class="ln"><span>votre histoire<span class="dot">.</span></span></span>
+      </h1>
+      <div class="hv2__play">
+        <button class="play-btn" aria-label="Lire le showreel">
+          <svg width="24" height="26" viewBox="0 0 24 26"><path d="M2 2 L22 13 L2 24 Z" fill="#fff"/></svg>
+        </button>
+        <div class="hv2__meta">Trois minutes pour comprendre comment on transforme une marque en image qui marque.</div>
+      </div>
+    </div>
+    <div class="hv2__bottom">
+      <div class="hv2__meta">Photo · Vidéo · Motion · Réseaux sociaux</div>
+      <a href="#portfolio" class="btn btn--red">Voir le portfolio <span class="arrow">↗</span></a>
+    </div>
+    <div class="scroll-cue"><span>Scroll</span><span class="bar"></span></div>
+  </section>
+
+  <!-- ---- V3 : GRILLE ANIMÉE ---- -->
+  <section class="hero-variant hv3" data-screen-label="Hero 03" data-theme="cream">
+    <div class="hv3__bg" id="hv3bg"></div>
+    <div class="hv3__veil"></div>
+    <div class="container">
+      <div class="hv3__pill"><span class="d"></span> On fait passer votre message</div>
+      <h1><span>Passe</span> <span class="dot">&amp;</span> <span>Va<span class="dot">.</span></span></h1>
+      <p class="hv3__sub">L'agence de communication qui valorise votre image et votre visibilité, depuis l'Alsace.</p>
+      <div class="hv3__cta">
+        <a href="#portfolio" class="btn">Voir le portfolio <span class="arrow">↗</span></a>
+        <a href="#contact" class="btn btn--ghost">Nous contacter</a>
+      </div>
+    </div>
+    <div class="scroll-cue"><span>Scroll</span><span class="bar"></span></div>
+  </section>
+</header>
+
+<!-- hero switcher -->
+<div class="hero-switch" id="heroSwitch">
+  <span class="hero-switch__label">Hero</span>
+  <button data-h="0" class="on">01</button>
+  <button data-h="1">02</button>
+  <button data-h="2">03</button>
+</div>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="services theme-dark" id="services" data-theme="dark">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow reveal">Services</div>
+        <h2 class="reveal" data-d="1" style="margin-top:18px">Ce qu'on<br>fait passer<span class="dot">.</span></h2>
+      </div>
+      <p class="muted reveal" data-d="2">Trois métiers, une obsession : que votre marque sorte du lot et reste dans les têtes.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal" data-d="1">
+        <div class="svc__num">01</div>
+        <div class="svc__ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="2.5" y="6" width="19" height="14" rx="3"/><circle cx="12" cy="13" r="4"/><path d="M8 6l1.5-2.5h5L16 6"/></svg>
+        </div>
+        <div>
+          <h3>Photo</h3>
+          <p>On capte ce qui vous rend unique. Portraits, produits, événements, immobilier — des images qui donnent envie au premier regard.</p>
+          <div class="svc__tags"><span>Portrait</span><span>Produit</span><span>Événement</span><span>Corporate</span></div>
+        </div>
+        <div class="svc__big">01</div>
+      </article>
+      <article class="svc reveal" data-d="2">
+        <div class="svc__num">02</div>
+        <div class="svc__ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="2.5" y="6" width="13" height="12" rx="2.5"/><path d="M15.5 10l6-3v10l-6-3z"/></svg>
+        </div>
+        <div>
+          <h3>Vidéo</h3>
+          <p>Du reel qui scrolle pas à l'aftermovie qui marque. Storytelling, motion design et montage qui claque — pensés pour capter l'attention.</p>
+          <div class="svc__tags"><span>Reels</span><span>Aftermovie</span><span>Motion</span><span>Interview</span></div>
+        </div>
+        <div class="svc__big">02</div>
+      </article>
+      <article class="svc reveal" data-d="3">
+        <div class="svc__num">03</div>
+        <div class="svc__ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="6" cy="12" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6"/></svg>
+        </div>
+        <div>
+          <h3>Réseaux sociaux</h3>
+          <p>On gère, on poste, on fait grandir. Stratégie, création de contenu et community management — votre visibilité en pilote automatique.</p>
+          <div class="svc__tags"><span>Stratégie</span><span>Contenu</span><span>Community</span><span>Ads</span></div>
+        </div>
+        <div class="svc__big">03</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PORTFOLIO ===================== -->
+<section class="portfolio theme-cream" id="portfolio" data-theme="cream">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow reveal">Portfolio</div>
+        <h2 class="reveal" data-d="1" style="margin-top:18px">Réalisations<span class="dot">.</span></h2>
+      </div>
+      <p class="muted reveal" data-d="2">Un aperçu de ce qu'on a fait passer. <em>Images de démonstration — à remplacer par vos vrais projets.</em></p>
+    </div>
+    <div class="pf-filter reveal">
+      <button class="on" data-f="all">Tout</button>
+      <button data-f="photo">Photo</button>
+      <button data-f="video">Vidéo</button>
+      <button data-f="social">Réseaux</button>
+    </div>
+    <div class="pf-grid" id="pfGrid">
+      <figure class="pf wide reveal" data-cat="video"><img src="https://picsum.photos/seed/pv1/1200/760" alt=""><div class="pf__ov"><span class="pf__cat">Vidéo</span><h4>Aftermovie — Festival local</h4></div></figure>
+      <figure class="pf tall reveal" data-cat="photo" data-d="1"><img src="https://picsum.photos/seed/pv2/700/1100" alt=""><div class="pf__ov"><span class="pf__cat">Photo</span><h4>Portrait corporate</h4></div></figure>
+      <figure class="pf reveal" data-cat="social"><img src="https://picsum.photos/seed/pv3/800/1000" alt=""><div class="pf__ov"><span class="pf__cat">Réseaux</span><h4>Campagne Instagram</h4></div></figure>
+      <figure class="pf reveal" data-cat="photo" data-d="1"><img src="https://picsum.photos/seed/pv4/800/1000" alt=""><div class="pf__ov"><span class="pf__cat">Photo</span><h4>Shooting produit</h4></div></figure>
+      <figure class="pf reveal" data-cat="photo" data-d="2"><img src="https://picsum.photos/seed/pv5/800/1000" alt=""><div class="pf__ov"><span class="pf__cat">Photo</span><h4>Immobilier</h4></div></figure>
+      <figure class="pf wide reveal" data-cat="video" data-d="1"><img src="https://picsum.photos/seed/pv6/1200/760" alt=""><div class="pf__ov"><span class="pf__cat">Vidéo</span><h4>Reel produit · 15s</h4></div></figure>
+      <figure class="pf reveal" data-cat="social"><img src="https://picsum.photos/seed/pv7/800/1000" alt=""><div class="pf__ov"><span class="pf__cat">Réseaux</span><h4>Refonte de feed</h4></div></figure>
+      <figure class="pf tall reveal" data-cat="photo" data-d="1"><img src="https://picsum.photos/seed/pv8/700/1100" alt=""><div class="pf__ov"><span class="pf__cat">Photo</span><h4>Événementiel</h4></div></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CLIENTS ===================== -->
+<section class="clients theme-dark" id="clients" data-theme="dark">
+  <div class="container">
+    <div class="lead">
+      <div class="eyebrow reveal" style="justify-content:center">Clients</div>
+      <h2 class="reveal" data-d="1" style="margin-top:18px">Ils nous font confiance<span class="dot">.</span></h2>
+      <p class="reveal" data-d="2">Des artisans, commerçants, entrepreneurs et marques d'Alsace qui voulaient une image à la hauteur de leur ambition.</p>
+    </div>
+  </div>
+  <div class="marquee reveal">
+    <div class="marquee__row" id="mq1"></div>
+    <div class="marquee__row" id="mq1b"></div>
+  </div>
+  <div class="marquee marquee--rev reveal">
+    <div class="marquee__row" id="mq2"></div>
+    <div class="marquee__row" id="mq2b"></div>
+  </div>
+  <div class="container">
+    <div class="stats">
+      <div class="stat reveal"><div class="num"><span data-count="40">0</span>+</div><div class="lbl">Projets livrés</div></div>
+      <div class="stat reveal" data-d="1"><div class="num"><span data-count="25">0</span></div><div class="lbl">Clients accompagnés</div></div>
+      <div class="stat reveal" data-d="2"><div class="num"><span data-count="3">0</span></div><div class="lbl">Métiers, une équipe</div></div>
+      <div class="stat reveal" data-d="3"><div class="num"><span data-count="100">0</span><span class="dot">%</span></div><div class="lbl">Made in Alsace</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== À PROPOS ===================== -->
+<section class="about theme-cream" id="agence" data-theme="cream">
+  <div class="container">
+    <div class="about__grid">
+      <div>
+        <div class="eyebrow reveal">L'agence</div>
+        <h2 class="reveal" data-d="1">Une équipe,<br>pas un prestataire<span class="dot">.</span></h2>
+        <p class="reveal" data-d="2">Passe &amp; Va, c'est une agence de communication née en Alsace avec une idée simple : votre image mérite mieux qu'un post vite fait. On prend le temps de comprendre votre marque, puis on la met en lumière — en photo, en vidéo et sur les réseaux.</p>
+        <p class="reveal" data-d="2">Réactifs, proches, créatifs. On bosse comme une extension de votre équipe, pas comme un fournisseur à qui on envoie un brief par mail.</p>
+        <div class="about__loc reveal" data-d="3"><span class="pin"></span> Horizon 46 — La Fabrik, Sélestat</div>
+      </div>
+      <div class="about__media reveal" data-d="2">
+        <img src="https://picsum.photos/seed/studio/900/1100" alt="L'atelier Passe & Va">
+        <div class="badge"><b>P&amp;V</b><span>Studio créatif<br>en Alsace</span></div>
+      </div>
+    </div>
+    <div class="team">
+      <article class="tm reveal"><div class="tm__ph"><img src="https://picsum.photos/seed/team1/500/500" alt=""></div><h4>Prénom Nom</h4><span>Photographe &amp; vidéaste</span></article>
+      <article class="tm reveal" data-d="1"><div class="tm__ph"><img src="https://picsum.photos/seed/team2/500/500" alt=""></div><h4>Prénom Nom</h4><span>Social media manager</span></article>
+      <article class="tm reveal" data-d="2"><div class="tm__ph"><img src="https://picsum.photos/seed/team3/500/500" alt=""></div><h4>Prénom Nom</h4><span>Direction créative</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact theme-dark" id="contact" data-theme="dark">
+  <div class="container">
+    <div class="contact__grid">
+      <div>
+        <div class="eyebrow reveal">Contact</div>
+        <h2 class="reveal" data-d="1" style="margin-top:18px">On se<br>lance<span class="dot">?</span></h2>
+        <p class="contact__lead reveal" data-d="2">Un projet, une envie, une idée encore floue ? Écrivez-nous — on vous répond vite, avec un vrai humain au bout.</p>
+        <div class="contact__info reveal" data-d="2">
+          <div class="ci"><span class="k">Email</span><a class="v" href="mailto:contact@passeetva.fr">contact@passeetva.fr</a></div>
+          <div class="ci"><span class="k">Instagram</span><a class="v" href="https://www.instagram.com/passe.et.va" target="_blank" rel="noopener">@passe.et.va</a></div>
+          <div class="ci"><span class="k">Adresse</span><span class="v">Horizon 46 — La Fabrik<br>Sélestat, Alsace</span></div>
+        </div>
+      </div>
+      <form class="form reveal" data-d="1" id="form" novalidate>
+        <div class="field"><input type="text" id="f-name" placeholder=" " required><label for="f-name">Votre nom</label><div class="msg">Indiquez votre nom.</div></div>
+        <div class="field"><input type="email" id="f-mail" placeholder=" " required><label for="f-mail">Votre email</label><div class="msg">Email invalide.</div></div>
+        <div class="field">
+          <select id="f-type"><option value="">Type de projet</option><option>Photo</option><option>Vidéo</option><option>Réseaux sociaux</option><option>Projet global</option></select>
+        </div>
+        <div class="field"><textarea id="f-msg" placeholder=" " required></textarea><label for="f-msg">Parlez-nous de votre projet</label><div class="msg">Dites-nous un mot sur votre projet.</div></div>
+        <button type="submit" class="btn btn--red">Demander un devis <span class="arrow">↗</span></button>
+        <div class="form__ok" id="formOk"><span>✓</span> Merci ! On revient vers vous très vite.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer theme-dark" data-theme="dark">
+  <div class="container">
+    <div class="footer__top">
+      <a href="#top" class="footer__logo"><img src="assets/logo-white.png" alt="Passe & Va"></a>
+      <div class="footer__nav">
+        <div class="footer__col"><h5>Navigation</h5><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#clients">Clients</a><a href="#agence">Agence</a></div>
+        <div class="footer__col"><h5>Services</h5><a href="#services">Photo</a><a href="#services">Vidéo</a><a href="#services">Réseaux sociaux</a></div>
+        <div class="footer__col"><h5>Suivez-nous</h5><a href="https://www.instagram.com/passe.et.va" target="_blank" rel="noopener">Instagram ↗</a><a href="#contact">Contact</a></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Passe &amp; Va — Agence de communication · Alsace</span>
+      <span>On valorise votre image &amp; votre visibilité<span class="dot">.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
