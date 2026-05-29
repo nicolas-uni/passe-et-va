@@ -87,7 +87,7 @@
   }
 
   /* ---------- CLIENTS : marquees ---------- */
-  const clients=['Maison Lutz','Atelier Bär','Café Munster','Domaine Riehl','Studio Klein','Boulangerie Schmitt','Garage Weber','Fleurs & Co','Vélo Sélestat','Brasserie Kléber'];
+  const clients=["Cafés T'heim",'Brasserie Maison Rouge','Boulangerie du Blé au Pain','Alsace Alarme','Bar le 33','Mimosa','Dickely','Maison Lutz','Atelier Bär','Studio Klein'];
   function fill(id, mark){
     const row=$('#'+id); if(!row) return;
     clients.forEach(n=>{
