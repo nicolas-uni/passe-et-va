@@ -46,7 +46,7 @@
     onScroll();
   }
   switchBtns.forEach(b=>b.addEventListener('click', ()=>activateHero(+b.dataset.h)));
-  const saved = +(localStorage.getItem('pv_hero')||0);
+  const saved = 2; // hero 3 fixe
 
   /* ---------- HERO V1 : mot rotatif + point qui flotte ---------- */
   const words = ['image','marque','histoire','présence'];

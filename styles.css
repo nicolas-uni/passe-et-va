@@ -249,6 +249,8 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:.98;letter-
   padding:.55em 1.1em;border-radius:100px;font-weight:700;font-size:.82rem;align-items:center;gap:.6em;
   box-shadow:0 10px 30px -16px rgba(0,0,0,.3)}
 .hv3__pill .d{width:8px;height:8px;border-radius:50%;background:var(--red)}
+.hv3__logo{width:clamp(240px,40vw,600px);opacity:0;transform:translateY(30px);transition:.9s var(--ease) .1s;display:block;margin:0 auto}
+.hv3.go .hv3__logo{opacity:1;transform:none}
 .hv3__sub{margin:clamp(24px,3vw,34px) auto 0;max-width:520px;color:var(--muted);font-size:clamp(1rem,1.4vw,1.15rem);
   opacity:0;transform:translateY(20px);transition:.9s var(--ease) .5s;line-height:1.5}
 .hv3.go .hv3__sub{opacity:1;transform:none}
