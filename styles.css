@@ -304,13 +304,12 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:.98;letter-
 .pf-filter{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
 .pf-filter button{font-weight:700;font-size:.86rem;padding:.55em 1.1em;border-radius:100px;border:1px solid var(--line);color:var(--muted);transition:.3s}
 .pf-filter button.on,.pf-filter button:hover{background:var(--ink);color:var(--cream);border-color:var(--ink)}
-.pf-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,1.4vw,20px);grid-auto-flow:dense}
-.pf{position:relative;overflow:hidden;border-radius:18px;background:var(--cream-2);cursor:pointer;grid-column:span 4;aspect-ratio:4/5}
-.pf.wide{grid-column:span 8;aspect-ratio:16/10}
-.pf.tall{grid-column:span 4;aspect-ratio:3/5}
-@media(max-width:900px){.pf,.pf.wide,.pf.tall{grid-column:span 6;aspect-ratio:4/5}}
-@media(max-width:560px){.pf,.pf.wide,.pf.tall{grid-column:span 12}}
-.pf img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease), filter .6s}
+.pf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.4vw,20px);grid-auto-rows:clamp(220px,28vw,420px)}
+.pf{position:relative;overflow:hidden;border-radius:18px;background:var(--cream-2);cursor:pointer}
+.pf.wide{grid-column:span 2}
+@media(max-width:900px){.pf-grid{grid-template-columns:repeat(2,1fr)}.pf.wide{grid-column:span 1}}
+@media(max-width:560px){.pf-grid{grid-template-columns:1fr}}
+.pf img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
 .pf:hover img{transform:scale(1.07)}
 .pf__ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;
   background:linear-gradient(0deg,rgba(11,11,12,.78),transparent 55%);
@@ -321,7 +320,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:.98;letter-
 .pf.hide{display:none}
 
 /* Variante vidéo dans le portfolio */
-.pf--video{aspect-ratio:9/16;cursor:default}
+.pf--video{cursor:default}
 .pf--video iframe{position:absolute;inset:0;width:100%;height:100%;border:none;display:block}
 .pf--video .pf__ov{opacity:1;transform:none;background:linear-gradient(0deg,rgba(11,11,12,.8),transparent 40%);pointer-events:none}
 
